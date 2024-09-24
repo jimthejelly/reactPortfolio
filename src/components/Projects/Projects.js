@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import circuitsim from "../../Assets/Projects/circuitsim.png";
+import projectleaf from "../../Assets/Projects/projectleaf.png";
+import watermelon from "../../Assets/Projects/watermelon.png";
+import voice from "../../Assets/Projects/voice.png";
+import fullerene from "../../Assets/Projects/fullerene.png";
+import castaway from "../../Assets/Projects/castaway.png";
+import hoomansystem from "../../Assets/Projects/hoomansystem.png";
+import throughtheages from "../../Assets/Projects/throughtheages.png";
 
 function Projects() {
   return (
@@ -15,76 +17,101 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here is a list of projects that I have worked on over the years.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={voice}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Project VOICE"
+              subtitle="August 2024 - Present"
+              description="A part-research, part-open source project that aims to create home-use medical devices to provide non-verbal kids with an alternate form of communication. This project is done in tandem with the Voice Project at the University of Notre Dame."
+              ghLink="/"
+              projLink="https://new.rcos.io/projects/project-voice/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={watermelon}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Watermelon Lights"
+              subtitle="May 2024 - September 2024"
+              description="A circuit system that lights up alternating LEDs (red & green) at specific sound frequencies. This project was meant to emulate Clap On Lights, except with a more narrow specification that eliminates noise and potential errors."
+              docuLink="https://docs.google.com/document/d/1QdWbbYbuF54TKe8uwa-hxR_3HgViGpavkoGLGTZGsps/edit?usp=sharing"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={fullerene}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Fullerene"
+              subtitle="May 2024 - August 2024"
+              description="A 3D and VR environment where users can build and explore chemistry molecules & experiment with their molecular and atomic geometry in an accurate and detailed simulation. This project is supervised by Dr Alexander Ma, and was developed in the Rensselaer Center for Open Source (RCOS)."
+              ghLink="https://github.com/jimthejelly/fullerene"
+              projLink="https://new.rcos.io/projects/fullerene/?semester="
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={circuitsim}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Personal Tutor: Circuit Randomizer"
+              subtitle="January 2024 - May 2024"
+              description="A circuit randomizer that can continuously provide students with random circuits for them to practice circuit analysis. This project is intended for classroom and laboratory use, and is supervised by Professor Shayla Sawyer and the Mercer XLab at Rensselaer Polytechnic Institute."
+              ghLink="https://github.com/andrewkbank/jsCircuitSimulator"
+              demoLink="https://andrewkbank.github.io/jsCircuitSimulator/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={throughtheages}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Through the Ages"
+              subtitle="February 2023 - March 2023"
+              description="Small choices can have large impacts. You are sent back in time to save the planet, but going back in time has serious consequences! Any small change you make can change the entire course of history, so choose carefully!"
+              ghLink="https://github.com/jimthejelly/Through-the-Ages"
+              demoLink="https://through-the-ages-cole.onrender.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+                imgPath={projectleaf}
+                isBlog={false}
+                title="Project Leaf"
+                subtitle="December 2021"
+                description="A webpage designed to keep track of company leaves of absences, developed during my 2 weeks interning at PT. Cashtree in Jakarta, Indonesia. I worked on the front & back-end of this webpage, to create an easy-to-use webpage for the company. Project Leaf was implemented within the company for use after development."
+                ghLink="https://github.com/jimthejelly/project-leaf"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+                imgPath={castaway}
+                isBlog={false}
+                title="Casted Away"
+                subtitle="September 2020"
+                description="My team's Pygame 30 Game Jam submission for the theme 'Cast Away'. A farming simulator made enitrely in Python, about the harsh Casta system in Spain during the Age of Discovery."
+                ghLink="https://github.com/0Nikola0/Casted-Away"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={hoomansystem}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="The Hooman System"
+              subtitle="2019"
+              description="A High school science project about the life of an oxygen atom. The Oxygen atom, called Oxie, found his way into what is known as The HOOMAN System. Now, he has to try his best to survive everything that the system throws his way!"
+              itchLink="https://jimthejelly.itch.io/scienceproject"
             />
           </Col>
         </Row>

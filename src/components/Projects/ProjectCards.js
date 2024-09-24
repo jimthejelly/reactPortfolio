@@ -3,25 +3,48 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { TbWriting } from "react-icons/tb";
+import { FaItchIo } from "react-icons/fa";
+import { GoProject } from "react-icons/go";
 
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title className="title">{props.title}</Card.Title>
+        <Card.Subtitle>{props.subtitle}</Card.Subtitle><br/>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
         {"\n"}
         {"\n"}
+
+        {!props.isBlog && props.ghLink && (
+            <Button
+                variant="primary"
+                href={props.ghLink}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+            >
+                <BsGithub /> &nbsp;
+                {"Github"}
+            </Button>
+        )}
+
+        {!props.isBlog && props.docuLink && (
+            <Button
+                variant="primary"
+                href={props.docuLink}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+              >
+                <TbWriting /> &nbsp;
+                {"Documentation"}
+            </Button>
+        )}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -32,6 +55,30 @@ function ProjectCards(props) {
             <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
+        )}
+
+        {!props.isBlog && props.itchLink && (
+            <Button
+                variant="primary"
+                href={props.itchLink}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+            >
+                <FaItchIo /> &nbsp;
+                {"Itch.io"}
+            </Button>
+        )}
+
+        {!props.isBlog && props.projLink && (
+            <Button
+                variant="primary"
+                href={props.projLink}
+                target="_blank"
+                style={{ marginLeft: "10px" }}
+            >
+                <GoProject /> &nbsp;
+                {"Project Page"}
+            </Button>
         )}
       </Card.Body>
     </Card>
