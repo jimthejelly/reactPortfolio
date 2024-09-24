@@ -30,7 +30,7 @@ function Projects() {
               title="Project VOICE"
               subtitle="August 2024 - Present"
               description="A part-research, part-open source project that aims to create home-use medical devices to provide non-verbal kids with an alternate form of communication. This project is done in tandem with the Voice Project at the University of Notre Dame."
-              ghLink="/"
+              ghLink="https://github.com/j-rahmeier/Project-VOICE"
               projLink="https://new.rcos.io/projects/project-voice/"
             />
           </Col>
