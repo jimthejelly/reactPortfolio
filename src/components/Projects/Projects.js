@@ -25,6 +25,16 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+                imgPath={ladybug}
+                isBlog={false}
+                title="EasyGarden"
+                subtitle="August 2024 - December 2024"
+                description="A semester long group project for Intro to Engineering Design at RPI. The robot is designed to make gardening more ergonomic and autonomous for those who love gardening but have mobility issues. I was in charge of the Electronics and Controls subsystem, which handled the workings of stepper and encoded motors along with their connection to an IR remote."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={voice}
               isBlog={false}
               title="Project VOICE"
